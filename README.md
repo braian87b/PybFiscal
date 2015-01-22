@@ -1,10 +1,13 @@
 # PybFiscal
 Driver de Impresión en Impresoras Fiscales para comandos en script formato ixbatch compatible
 
-Utiliza la libreria python PyFiscalPrinter
+Utiliza la libreria python [PyFiscalPrinter](https://github.com/reingart/pyfiscalprinter)
 y permite imprimir en impresora fiscal archivos como este:
 
 
+
+
+## Ejemplo de Archivo de Entrada:
 
 ```
 @SetCustomerData|BRAICHUCHINCHULINCHIN  |23331234567|I|C|Rosario 4332|
@@ -26,6 +29,46 @@ y permite imprimir en impresora fiscal archivos como este:
 @CloseFiscalReceipt
 ```
 
+
+
+## Ejemplo de Salida:
+
+```
+#python PybFiscal.py -t
+sendCommand 42 []
+sendCommand 93 ('3', '\x7f')
+sendCommand 93 ('4', '\x7f')
+sendCommand 93 ('5', '\x7f')
+sendCommand 93 ('11', '\x7f')
+sendCommand 93 ('12', '\x7f')
+sendCommand 93 ('13', '\x7f')
+sendCommand 93 ('14', '\x7f')
+sendCommand 93 ('15', '\x7f')
+sendCommand 93 ('16', '\x7f')
+sendCommand 93 ('17', '\x7f')
+sendCommand 93 ('18', '\x7f')
+sendCommand 93 ('19', '\x7f')
+sendCommand 98 ['BRAICHUCHINCHULINCHIN  ', '23331234567', 'I', 'C', 'Rosario 4332']
+sendCommand 64 ['A', 'T']
+sendCommand 66 ['Mouse Logitech M187', '1.0', '5.08', '10.5', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Cable de Red Largo ', '5.0', '5.1', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Parlantes Edifier  ', '1.0', '5.12', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Teclado Microsoft  ', '1.0', '5.12', '10.5', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Aire Acondicionado ', '2.0', '5.12', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Memoria MicroSD 26g', '2.0', '5.22', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Lector Cod Barras  ', '2.0', '5.3', '10.5', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Antena Parabolica  ', '2.0', '5.33', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Parabolica Humana  ', '1.0', '5.39', '10.5', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Ensuciador HiTechie', '1.0', '5.44', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 66 ['Pythonizingling    ', '1.0', '5.46', '21.0', 'M', '0.0', '1', 'T']
+sendCommand 67 []
+sendCommand 68 ['Efectivo', '100.00', 'T', '1']
+sendCommand 69 ()
+```
+
+
+
+## Ayuda integrada:
 
 ```
 #python PybFiscal.py -h
