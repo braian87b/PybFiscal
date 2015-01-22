@@ -1,0 +1,18 @@
+@SetCustomerData|BRAICHUCHINCHULINCHIN  |23331234567|I|C|Rosario 4332|
+
+@OpenFiscalReceipt|A|T
+@PrintLineItem|Mouse Logitech M187|1.0|5.08|10.50|M|0.0|0|B
+@PrintLineItem|Cable de Red Largo |5.0|5.10|21.00|M|0.0|0|B
+@PrintLineItem|Parlantes Edifier  |1.0|5.12|21.00|M|0.0|0|B
+@PrintLineItem|Teclado Microsoft  |1.0|5.12|10.50|M|0.0|0|B
+@PrintLineItem|Aire Acondicionado |2.0|5.12|21.00|M|0.0|0|B
+@PrintLineItem|Memoria MicroSD 26g|2.0|5.22|21.00|M|0.0|0|B
+@PrintLineItem|Lector Cod Barras  |2.0|5.30|10.50|M|0.0|0|B
+@PrintLineItem|Antena Parabolica  |2.0|5.33|21.00|M|0.0|0|B
+@PrintLineItem|Parabolica Humana  |1.0|5.39|10.50|M|0.0|0|B
+@PrintLineItem|Ensuciador HiTechie|1.0|5.44|21.00|M|0.0|0|B
+@PrintLineItem|Pythonizingling    |1.0|5.46|21.00|M|0.0|0|B
+@Subtotal|P|Subtotal|0|
+@TotalTender|Efectivo|100.00|T|0
+@CloseFiscalReceipt
+
