@@ -6,6 +6,7 @@ y permite imprimir en impresora fiscal archivos como este:
 
 
 
+```
 @SetCustomerData|BRAICHUCHINCHULINCHIN  |23331234567|I|C|Rosario 4332|
 
 @OpenFiscalReceipt|A|T
@@ -23,10 +24,10 @@ y permite imprimir en impresora fiscal archivos como este:
 @Subtotal|P|Subtotal|0|
 @TotalTender|Efectivo|100.00|T|0
 @CloseFiscalReceipt
+```
 
 
-
-
+```
 #python PybFiscal.py -h
 
 usage: PybFiscal.py [-h] [-p [puerto]] [-i [entrada]] [-o [salida]]
@@ -63,3 +64,4 @@ Ejemplos:
 DOS:    ixbatch.py -p COM1 -i entrada.txt -o salida.txt -s 9600
 LINUX:  ixbatch.py -p /dev/ttyS1 -i entrada.txt -o salida.txt -s 9600
 UNIX:   ixbatch.py -p /dev/tty2a -i entrada.txt -o salida.txt -s 9600
+```
